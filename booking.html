@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>online-booking</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="styles2.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/ca797e490d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="header">
+    <!-- navbar -->
+    <div class="hd">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="main.html">
+          <img src="images/Hospital.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="main.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                COVID-19 Section
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Take vaccine</a>
+                <a class="dropdown-item" href="#">Report case</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Book COVID-19 test</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Job oportunities</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="bnav btn btn-outline-primary my-2 my-sm-0" type="submit">Log in</button>
+            <button class="bnav btn btn-primary my-2 my-sm-0" type="submit">Sign up</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- instructions -->
+  <section id="instructions">
+    <div class="contain">
+      <div class="title">
+        <i class="calender fas fa-calendar-check fa-3x"></i>
+        <h1 class="bookh1">Book online </h1>
+        <h1 class="bookh1"><span class="bookspan">Now</span></h1>
+      </div>
+      <div class="instructions">
+        <h3 class="bookh3">Instructions </h3>
+        <h4 class=bookh4>How to fill the form </h4>
+        <ul class="bookul">
+          <li>All the fields must be filled with accurate and up-to-date information</li>
+          <li>ID number is a must,the ID has to be valid</li>
+          <li>You are adviced to use your laptop while filling this form</li>
+          <li>You can edit this form after you save it</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <!-- form -->
+  <section id="onlineform">
+    <div class="">
+      <form action="mailto:mlk.hussien13@gmail.com" method="post" enctype="multipart/form-data">
+        <div class="personalinfo">
+          <h1 class="formh1">Personal Info</h1>
+          <label for="">First name</label> <br>
+          <input type="text" name="fname" value="" placeholder="Smith"> <br>
+          <label for="">Last name</label> <br>
+          <input type="text" name="lname" value="" placeholder="Ibrahim">
+          <br>
+          <label for="">ID number/Passport Number:</label> <br>
+          <input type="text" name="id" value="" placeholder="**********">
+          <br>
+          <label for="phone">Phone number:</label> <br>
+          <input type="tel" id="phone" name="phone"> <br>
+        </div>
+        <br>
+        <div class="medical">
+          <h1 class="formh1">Medical Info</h1>
+          <label for="department">Choose the department required</label><br>
+          <input class="i1" type="radio" id="generalmedicine" name="department" value="generalmedicine">
+          <label class="l1" for="generalmedicine">General Medicine</label><br>
+          <input class="i1" type="radio" id="phy" name="department" value="phy">
+          <label class="l1" for="phy">Physiotherapy</label><br>
+          <input class="i1" type="radio" id="dentistry" name="department" value="dentistry">
+          <label class="l1" for="dentistry">Dentistry</label><br>
+          <label class="l1" for="text" name="department">other(please specify)</label>
+          <input type="text" name="" value="">
+          <br>
+          <label for="date">Date and time of visit</label> <br>
+          <input type="date" name="date" value="">
+          <input type="time" name="time" value="">
+        </div>
+        <br><br>
+        <div class="cup">
+          <div class="insurance">
+            <h1 class="formh1">Medical Insurance</h1>
+            <p class="formp">Only relevant to clients with hospital insurance</p>
+            <label class="" for="">Insurance number</label> <br>
+            <input class="" type="text" name="insurance" value=""> <br>
+            <label class="" for="">Expiry date</label> <br>
+            <input class="" type="date" name="exdate" value=""> <br>
+          </div>
+          <div class="otherinfo ">
+            <h1 class="formh1">Other Info</h1>
+            <label class="" for="">Last appointment date</label> <br>
+            <input class="" type="date" name="lastapp" value=""> <br>
+            <label class="" for="">Most recent blood sample test</label>
+            <input class="" type="file" name="" value=""> <br>
+            <label class="" for="">Other relevant info for the appointment </label> <br>
+            <textarea name="otherinfo" rows="8" cols="40"></textarea>
+          </div>
+        </div>
+        <input class="btn-submit btn btn-outline-primary " type="submit" name="submit" value="submit">
+      </form>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

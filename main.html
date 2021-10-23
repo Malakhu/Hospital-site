@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hospital</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="master.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/ca797e490d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="bg">
+    <section id="header">
+      <!-- navbar -->
+      <div class="hd">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="main.html">
+            <img src="images/Hospital.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  COVID-19 Section
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Take vaccine</a>
+                  <a class="dropdown-item" href="#">Report case</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Book COVID-19 test</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Job oportunities</a>
+              </li>
+              <li>
+                <a class="nav-link active" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+      <button class="bnav btn btn-outline-primary my-2 my-sm-0" type="submit">Log in</button>
+    <button class="bnav btn btn-primary my-2 my-sm-0" type="submit">Sign up</button>
+  </form>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- top part-->
+    <section id="top">
+      <div class="container1">
+        <!-- Side navigation -->
+        <div class="menu">
+          <div class="sidenav">
+            <div class="sidemenu">
+              <a href="#" class="navbar-brand">Side Menu</a>
+            </div>
+            <div class="green">
+              <a class="" href="booking.html" target="_blank">Book appointment</a>
+            </div>
+            <div class="red">
+              <a class="red" href="donation.html" target="_blank">Donate blood</a>
+            </div>
+            <div class="">
+              <a href="#">Volunteer</a>
+              <a href="#">Recent milestones</a>
+              <a href="#">call us</a>
+              <a href="#">Medical training</a>
+              <a href="#">Job application</a>
+            </div>
+          </div>
+
+        </div>
+        <!-- main -->
+        <div class="main">
+          <h1 class="h1top">“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” -William Londen</h1>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <!-- book appointment -->
+  <section id="bookappnt">
+    <h1 class="h1book">Book an appointment</h1>
+    <div class="row">
+      <div class="col col-lg-4">
+        <a href="booking.html"><i class="icon fas fa-home fa-5x"></i> </a>
+        <p class="pbook">Book Online</p>
+      </div>
+      <div class="col col-lg-4">
+         <i class="icon fas fa-phone-alt fa-5x"></i>
+        <p class="pbook">Book by calling</p>
+      </div>
+      <div class="col col-lg-4">
+         <i class="icon fas fa-user fa-5x"></i>
+        <p class="pbook">visit us</p>
+      </div>
+    </div>
+  </section>
+  <!-- blood donation and emergency -->
+  <section id="last">
+    <h1 class="h1last"> Save a life</h1>
+    <div class= "container2">
+      <div class="emergency">
+        <h2 class="h21">Emergency</h2>
+          <a href="#"> <img class="team" src="images/team.png" alt="team-img"></a>
+          <p class="p1">If an emergency occures to one of your family members (diabetic coma, asthma, etc), follow the instructions provided in the emergency section</p>
+      </div>
+      <div class="donate">
+        <h2 class="h21">Donate blood</h2>
+        <a href="donation.html"><i class="icon2 fas fa-hand-holding-medical fa-10x"></i></a>
+        <p class="p1">Blood donation save patient, families and society ut labore et dolore magna aliqua.</p>
+        <p class="p1">Save lives and donate blood</p>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+    <h6 class="h61">Copyright 2021</h6>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

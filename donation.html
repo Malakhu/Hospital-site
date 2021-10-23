@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blood donation</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="styles2.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/ca797e490d.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <section id="header">
+      <!-- navbar -->
+      <div class="hd">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="main.html">
+            <img src="images/Hospital.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  COVID-19 Section
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Take vaccine</a>
+                  <a class="dropdown-item" href="#">Report case</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Book COVID-19 test</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Job oportunities</a>
+              </li>
+              <li>
+                <a class="nav-link active" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="bnav btn btn-outline-primary my-2 my-sm-0" type="submit">Log in</button>
+              <button class="bnav btn btn-primary my-2 my-sm-0" type="submit">Sign up</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section id=title>
+      <div class="row">
+        <div class="col-6">
+          <h1 class="h1blood sideleft">Every drop</h1>
+        </div>
+        <div class="col-6">
+          <h1 class="h1blood sideright">Matters</h1>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="">
+        <div class="box">
+          <div class="benefits">
+            <h3 class="bloodh3">Benefits of blood donation</h3>
+            <ul>
+              <li>Reduce stress</li>
+              <li>Improve your emotional well-being</li>
+              <li>Benefit your physical health</li>
+              <li>Help get rid of negative feelings</li>
+              <li>Provide a sense of belonging and reduce isolation</li>
+            </ul>
+          </div>
+          <div class="rules">
+            <h3 class="bloodh3">Rules for donors</h3>
+            <ul>
+              <li>To donate blood or platelets, you must be in good general health</li>
+              <li>You must weigh at least 110 pounds</li>
+              <li>You must be at least 16 years old</li>
+              <li>Parental consent is required for blood donation by 16 year olds, no parental consent is required for those who are at least 17 years old.</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section id="bloodform">
+      <div class="bloodform">
+        <form action="/" method="post" enctype="multipart/form-data" >
+          <h1>Personel information</h1>
+          <label for="fname">Full Name</label> <br>
+          <input type="text" name="fname"> <br>
+          <label for="email">Email</label> <br>
+          <input type="email" name="email"> <br>
+          <label for="tele">Phone number</label> <br>
+          <input type="tel" name="tele"> <br> <br>
+      <hr>
+      <h1>Info for collection center</h1>
+        <label for="age">Birth date</label> <br>
+        <input type="date" name="age" value=""> <br>
+        <label for="consent">Consent</label>
+        <p>Only reuired if you are 16 years old</p>
+        <input type="file" name="consent" value=""> <br>
+        <label for="weight">Weight</label> <br>
+        <input type="text" name="weight" value=""> <br>
+        <label class="" for="bloodGroup">Blood group</label> <br>
+        <input class="i1" type="radio" name="bloodGroup" value="A">
+        <label class="l1" for="bloodGroup">Blood groupA</label> <br>
+        <input class="i1" type="radio" name="bloodGroup" value="B">
+        <label class="l1" for="bloodGroup">Blood group B</label> <br>
+        <input class="i1" type="radio" name="bloodGroup" value="AB">
+        <label class="l1" for="bloodGroup">Blood group AB</label> <br>
+        <input class="i1" type="radio" name="bloodGroup" value="O">
+        <label class="l1" for="bloodGroup">Blood group O</label> <br> <br> <br>
+        <label for="rh">RH</label>
+        <input class="i1" type="radio" name="rh" value="Postive">
+        <label for="rh" class="l1">Postive</label>
+        <input class="i1" type="radio" name="rh" value="Negative">
+        <label for="rh" class="l1">Negative</label> <br> <br>
+
+        <button class="btn btn-primary btn-lg" type="submit" name="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+  </body>
+</html>

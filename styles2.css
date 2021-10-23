@@ -1,0 +1,143 @@
+body,html{
+}
+/* id book */
+#header{
+  margin: 0;
+}
+#instructions{
+  margin: 3% 5%;
+}
+ #onlineform{
+  margin: auto 5%;
+}
+/* id donation */
+#title{
+  background: url("images/titlebg.jpg") no-repeat center;
+  background-size: cover;
+  height: 250px;
+  margin-bottom: 3%;
+}
+#bloodform{
+  background-color: #f9f9f9;
+  margin: 3%;
+  border: 3px solid #000;
+}
+/* instructions */
+.contain {
+  display: grid;
+  grid-template-columns: 300px 600px;
+  gap: 0px 35px;
+  grid-template-areas: "title instructions";
+  justify-content: center;
+  align-items: center;
+}
+.bookh1{
+  font-family: serif;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  display: inline-block;
+    color: #F9F9F9;
+}
+.bookspan{
+  color: #000;
+ font-size: 2.5rem;
+ text-align: center;
+   display: inline-block;
+}
+.bookh3{
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color:#006400;
+}
+.title {
+   grid-area:title;
+   width: 30%;
+   background-color: #006400;
+   width:300px;
+   border-radius: 15%;
+   padding: 2%;
+   margin:2% auto 0;
+  height: 100px;
+
+ }
+ .calender{
+    color: #F9F9F9;
+ }
+.instructions {
+  grid-area: instructions;
+  background-color:  #F9F9F9;
+ }
+
+/* from */
+.formh1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+.personalinfo, .medical, .insurance, .otherinfo{
+  border: 2px solid black;
+  padding:  1%;
+}
+.cup{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 25px;
+  grid-template-areas: "insurance otherinfo";
+  justify-content: center;
+}
+.insurance{
+  grid-area: insurance;
+}
+.otherinfo{
+  grid-area: otherinfo;
+}
+label{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.l1{
+  font-weight: normal;
+}
+input{
+  border: 2px solid  #162447;
+  width: 30%;
+  height: 40px;
+}
+.i1{
+   width:5%;
+  height: auto;
+}
+.btn-submit{
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2% auto;
+}
+/* title */
+.h1blood{
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 100px ;
+  color: #630A10;
+}
+.box{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 25px;
+  grid-template-areas: "benefits rules";
+  justify-content: center;
+}
+.benefits{
+background-color: #B1E693;
+grid-area: benefits;
+}
+.rules{
+  background-color: #FF5C58;
+  grid-area: rules;
+}
+.bloodh3{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}

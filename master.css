@@ -1,0 +1,240 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #EEEEEE;
+}
+h1,h2,h3{
+  font-family: 'Cormorant Garamond', serif;
+}
+p{
+  font-family: 'Kanit', sans-serif;
+}
+/* bg image full width */
+.bg {
+  /* The image used */
+  background-image: url("images/headerbg.jpg");
+  /* Full height */
+  height: 70%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+/*************************** IDs *******************/
+#header {
+  height: 10%;
+}
+
+#top {}
+
+#bookappnt {
+    text-align: center;
+    background-color: #F9F9F9;
+    margin: 2%;
+  }
+
+#last {
+    text-align: center;
+    background: url("images/bookbg.jpg") no-repeat center;
+    background-size: cover;
+
+  }
+  /* ****************************** nvbar *******************************/
+  .bnav{
+    margin: 0.5rem;
+
+  }
+/* ****************************** side menu *******************************/
+.container1 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 0px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "main menu";
+  margin-bottom: 10%;
+}
+
+.menu {
+  grid-area: menu;
+  margin-top: 5%;
+}
+
+/* The sidebar menu */
+.sidenav {
+  position: sticky;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #fff;
+  /* white */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+}
+
+.sidemenu {
+  border: 2px solid black;
+  background-color: black;
+  text-align: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 3px 8px 6px 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  border: 2px solid black;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #000;
+  letter-spacing: 5px;
+}
+
+.sidemenu a:hover {
+  color: #fff;
+}
+
+.red a:hover {
+  color: red;
+}
+
+.green a:hover {
+  color: green;
+}
+
+/*********************** main content ********************/
+.main {
+  grid-area: main;
+}
+
+.h1top {
+  text-align: right;
+  margin: 3% 2% 3%;
+  font-size: 1.5rem;
+  width: 70%;
+  position: relative;
+  border: 3px solid #C9CCD5;
+  background-color: #C9CCD5;
+  animation: move;
+}
+.mouseover{
+  font-size: 2rem;
+  margin: 10%;
+}
+
+/************************* book appointment**********************/
+.h1book {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2% auto;
+  background-color:  #162447;
+  color: #fff;
+}
+
+.icon {
+  color: #162447;
+  border-radius: 100%;
+  margin: 3% auto;
+}
+
+.pbook {
+  font-size: 1rem;
+  padding: 3% auto;
+  font-weight: bold;
+  font-style: italic;
+}
+.icon:hover{
+  color: #C9CCD5;
+  margin: 4% auto;
+}
+/******************* emergency and blood donation *****************/
+.container2 {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-gap: 10%;
+  justify-content: space-between;
+}
+
+.emergency, .donate {
+  border: 0px solid #FEFBF3;
+  background-color: #FEFBF3;
+  border-radius: 10%;
+
+}
+.emergency{
+  margin:3%;
+}
+.donate{
+  margin:3%;
+}
+.team {
+  width: 180px;
+}
+
+.icon2 {
+  color: red;
+  padding-top: 10px;
+}
+
+.p1 {
+  font-size: 1rem;
+}
+
+.h1last {
+  font-size: 2rem;
+  color: #fff;
+  margin: 3% auto;
+}
+.h21{
+  background-color: #162447;
+  color: #fff;
+ width:80%;
+ margin: auto;
+}
+
+/******************** footer *********************/
+.h61{
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 10%;
+}
+/* responsiveness */
+@media screen and (max-width: 1000px){
+  .container2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 2%;
+    justify-content: space-between;}
+  .emergency, .donate{
+     height:300px;
+  }
+}
+
+/*animation*/
+@keyframes move {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 150px;
+  }
+
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 100px;
+  }
+}
